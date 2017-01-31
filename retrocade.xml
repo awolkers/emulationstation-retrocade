@@ -1,0 +1,246 @@
+<!--
+theme name:		Retrocade
+version:		1.0
+author:			Arno Wolkers
+email:			
+website:		
+license:		creative commons CC-BY-NC-SA
+-->
+<theme>
+	<formatVersion>4</formatVersion>
+
+	<view name="system, basic, detailed">
+		<image name="background" extra="true">
+			<tile>true</tile>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<path>./art/bg-wood.png</path>
+		</image>
+
+		<helpsystem name="help">
+			<textColor>fce8bf</textColor>
+			<iconColor>df6625</iconColor>
+			<fontPath>./art/BauhausStd-Demi.ttf</fontPath>
+			<fontSize>0.025</fontSize>
+			<pos>0.02 0.952</pos>
+		</helpsystem>
+
+		<image name="line_bottom" extra="true">
+			<path>./art/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.02 0.93</pos>
+			<size>0.96 0.002</size>
+			<color>fce8bf</color>
+		</image>
+	</view>
+
+	<view name="basic, detailed">
+		<image name="line_top" extra="true">
+			<path>./art/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.02 0.18</pos>
+			<size>0.96 0.002</size>
+			<color>fce8bf</color>
+		</image>
+
+		<image name="logo">
+			<origin>0 0.5</origin>
+			<pos>0.02 0.09</pos>
+			<maxSize>0.3 0.12</maxSize>
+		</image>
+
+		<image name="controller" extra="true">
+			<origin>1 0.5</origin>
+			<pos>0.98 0.09</pos>
+			<maxSize>0.3 0.12</maxSize>
+			<color>fce8bf50</color>
+		</image>
+
+		<textlist name="gamelist">
+			<selectorColor>df6625</selectorColor>
+			<selectedColor>fde9bf</selectedColor>
+			<primaryColor>df6625</primaryColor>
+			<secondaryColor>e98f23</secondaryColor>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+		</textlist>
+	</view>
+
+	<view name="system">
+		<image name="controller" extra="true">
+			<pos>0.5 0.2</pos>
+			<origin>0.5 0.5</origin>
+			<size>0.3 0</size>
+			<color>fce8bf30</color>
+		</image>
+	</view>
+
+	<view name="basic">
+		<!-- <image name="background_logo" extra="true">
+			<path>./art/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 0.18</size>
+			<color>FFFFFF50</color>
+		</image> -->
+
+		<!-- <image name="background_gamelist" extra="true">
+			<path>./art/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.02 0.212</pos>
+			<size>0.96 0.688</size>
+			<color>FFFFFF99</color>
+		</image> -->
+
+		<textlist name="gamelist">
+			<pos>0.02 0.212</pos>
+			<size>0.96 0.688</size>
+			<fontSize>0.04</fontSize>
+		</textlist>
+	</view>
+
+	<view name="detailed">
+		
+		<!-- <image name="background_logo_gamelist" extra="true">
+			<path>./art/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.02 0.212</pos>
+			<size>0.33 0.688</size>
+			<color>FFFFFF50</color>
+		</image> -->
+
+			<!-- <image name="logo">
+				<origin>0.5 0.5</origin>
+				<pos>0.186 0.14</pos>
+				<maxSize>0.33 0.19</maxSize>
+			</image> -->
+
+		<textlist name="gamelist">
+			<pos>0.02 0.212</pos>
+			<size>0.33 0.688</size>
+			<fontSize>0.03</fontSize>
+			<horizontalMargin>0.005</horizontalMargin>
+		</textlist>
+		
+		<!-- <image name="background_image" extra="true">
+			<path>./art/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.63 0.212</pos>
+			<size>0.35 0.688</size>
+			<color>FFFFFF99</color>
+		</image> -->
+
+		<image name="md_image">
+			<origin>1 0</origin>
+			<pos>0.98 0.212</pos>
+			<maxSize>0.35 0.688</maxSize>
+		</image>
+		
+		<!-- <image name="background_metadata" extra="true">
+			<path>./art/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.37 0.212</pos>
+			<size>0.25 0.1</size>
+			<color>FFFFFF99</color>
+		</image> -->
+
+
+		<text name="md_lbl_rating, md_lbl_players, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_lbl_releasedate">
+			<color>df6625</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.03</fontSize>
+			<size>0.24 0.01</size>
+		</text>
+
+		<text name="md_lbl_developer, md_developer, md_lbl_publisher, md_publisher">
+			<pos>1 1</pos>
+			<color>00000000</color>
+		</text>
+
+		<text name="md_genre, md_players, md_playcount">
+			<color>fce8bf</color>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<forceUppercase>1</forceUppercase>
+			<fontSize>0.03</fontSize>
+			<size>0.23 0.02</size>
+		</text>
+
+
+		<datetime name="md_releasedate, md_lastplayed">
+			<color>fce8bf</color>
+			<forceUppercase>1</forceUppercase>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.03</fontSize>
+			<size>0.23 0.02</size>
+		</datetime>
+
+		<text name="md_lbl_rating">
+			<pos>0.37 0.22</pos>
+		</text>
+		<rating name="md_rating">
+			<pos>0.37 0.25</pos>
+			<size>0.23 0.03</size>
+			<filledPath>./art/star_full.svg</filledPath>
+			<unfilledPath>./art/star_hollow.svg</unfilledPath>
+		</rating>
+
+		<text name="md_lbl_players">
+			<pos>0.37 0.31</pos>
+		</text>
+		<text name="md_players">
+			<pos>0.37 0.34</pos>
+		</text>
+
+		<text name="md_lbl_genre">
+			<pos>0.37 0.4</pos>
+		</text>
+		<text name="md_genre">
+			<pos>0.37 0.43</pos>
+		</text>
+
+		<text name="md_lbl_playcount">
+			<pos>0.37 0.49</pos>
+		</text>
+		<text name="md_playcount">
+			<pos>0.37 0.52</pos>
+		</text>
+
+		<text name="md_lbl_lastplayed">
+			<pos>0.37 0.58</pos>
+		</text>
+		<datetime name="md_lastplayed">
+			<pos>0.37 0.61</pos>
+		</datetime>
+
+		<text name="md_lbl_releasedate">
+			<pos>0.37 0.67</pos>
+		</text>
+		<datetime name="md_releasedate">
+			<pos>0.37 0.7</pos>
+		</datetime>
+
+		
+		<!-- <image name="background_description" extra="true">
+			<path>./art/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.37 0.8</pos>
+			<size>0.61 0.1</size>
+			<color>FFFFFF50</color>
+		</image>
+ -->
+		<text name="md_description">
+			<!-- <pos>0.37 0.8</pos> -->
+			<pos>1 1</pos>
+			<size>0.61 0.1</size>
+			<color>fce8bf</color>
+			<fontPath>./art/Cabin-Bold.ttf</fontPath>
+			<fontSize>0.024</fontSize>
+			<alignment>left</alignment>
+			<forceUppercase>1</forceUppercase>
+			<lineSpacing>1.45</lineSpacing>
+		</text>
+	</view>
+</theme>
